@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Езотерика — Магія та ритуали | Магазин магічних товарів та послуг</title>
+<meta name="description" content="Ритуальні набори, Таро, обереги, свічки та природні компоненти для практиків і тих, хто лише починає свій шлях. Індивідуальний підбір, консультації та супровід.">
+<meta name="keywords" content="езотерика, магія, ритуали, таро, обереги, свічки, амулети, магазин езотерики, ритуальні набори">
+<link rel="canonical" href="https://ezoteryka.example/">
+<link rel="icon" type="image/png" href="assets/ezoterika-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Езотерика — Магія та ритуали">
+<meta property="og:description" content="Ритуальні набори, Таро, обереги, свічки та природні компоненти. Індивідуальний підбір, консультації та супровід.">
+<meta property="og:image" content="https://ezoteryka.example/assets/ezoterika-logo.png">
+<meta property="og:url" content="https://ezoteryka.example/">
+<meta property="og:locale" content="uk_UA">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Езотерика — Магія та ритуали">
+<meta name="twitter:description" content="Ритуальні набори, Таро, обереги, свічки та природні компоненти для практиків і тих, хто лише починає свій шлях.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Store",
+  "name": "Езотерика — Магія та ритуали",
+  "description": "Ритуальні набори, Таро, обереги, свічки та природні компоненти для практиків і тих, хто лише починає свій шлях.",
+  "url": "https://ezoteryka.example/",
+  "image": "https://ezoteryka.example/assets/ezoterika-logo.png",
+  "areaServed": "Worldwide",
+  "sameAs": ["https://t.me/ezoterika_shop"]
+}
+</script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@400;500;600;700&display=swap');
+
+  :root{
+    --bg: #120b1c;
+    --bg-deep: #0a0612;
+    --panel: #1b1228;
+    --ink: #f2e9e2;
+    --muted: #ab9dc2;
+    --gold: #cc9b4f;
+    --gold-soft: #ecc987;
+    --sigil: #d9ad5f;
+    --violet: #6a4a8f;
+    --line: rgba(204,155,79,0.2);
+  }
+
+  *{ box-sizing: border-box; }
+  html{ scroll-behavior: smooth; }
+  body{
+    margin:0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Manrope', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  h1,h2,h3, .display{
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+  }
+
+  a{ color: inherit; }
+
+  .stars-bg{
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    background-image:
+      radial-gradient(1px 1px at 10% 20%, rgba(255,255,255,0.5), transparent),
+      radial-gradient(1px 1px at 80% 10%, rgba(255,255,255,0.4), transparent),
+      radial-gradient(1.5px 1.5px at 60% 70%, rgba(255,255,255,0.35), transparent),
+      radial-gradient(1px 1px at 30% 80%, rgba(255,255,255,0.45), transparent),
+      radial-gradient(1px 1px at 90% 60%, rgba(255,255,255,0.3), transparent),
+      radial-gradient(1.5px 1.5px at 45% 35%, rgba(255,255,255,0.4), transparent),
+      radial-gradient(1px 1px at 15% 55%, rgba(255,255,255,0.3), transparent),
+      radial-gradient(1px 1px at 70% 85%, rgba(255,255,255,0.35), transparent),
+      radial-gradient(1px 1px at 25% 40%, rgba(255,255,255,0.3), transparent);
+    background-repeat: repeat;
+    background-size: 700px 700px;
+    opacity: 0.9;
+    pointer-events: none;
+  }
+
+  .wrap{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 28px;
+    position: relative;
+    z-index: 1;
+  }
+
+  header{
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    backdrop-filter: blur(10px);
+    background: linear-gradient(to bottom, rgba(10,6,18,0.92), rgba(10,6,18,0.6));
+    border-bottom: 1px solid var(--line);
+  }
+  .nav{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 14px 0;
+  }
+  .brand{
+    display:flex;
+    align-items:center;
+    gap: 10px;
+    font-family:'Cormorant Garamond', serif;
+    font-size: 22px;
+    letter-spacing: 0.03em;
+  }
+  .brand .brand-icon{ width: 30px; height: 30px; flex-shrink: 0; }
+  .brand em{ font-style: normal; color: var(--gold-soft); font-size: 13px; margin-left: 3px; opacity: .85; }
+  .nav-links{ display:flex; gap: 30px; font-size: 15px; color: var(--muted); }
+  .nav-links a{ transition: color .2s ease; }
+  .nav-links a:hover{ color: var(--gold-soft); }
+  .nav .cta-small{
+    border: 1px solid var(--gold);
+    padding: 9px 22px;
+    border-radius: 3px;
+    font-size: 14px;
+    color: var(--gold-soft);
+    transition: background .25s ease, color .25s ease;
+    white-space: nowrap;
+  }
+  .nav .cta-small:hover{ background: var(--gold); color: var(--bg-deep); }
+
+  /* HERO */
+  .hero{
+    position: relative;
+    padding: 110px 0 120px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .hero::before{
+    content:'';
+    position:absolute;
+    top: -260px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 900px;
+    height: 900px;
+    background: radial-gradient(circle, rgba(106,74,143,0.35) 0%, rgba(106,74,143,0.08) 45%, transparent 70%);
+    pointer-events:none;
+  }
+  .hero::after{
+    content:'';
+    position:absolute;
+    bottom: -320px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(204,155,79,0.16) 0%, transparent 65%);
+    pointer-events:none;
+  }
+  .hero-inner{ position: relative; }
+  .sigil-big{
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 22px;
+    filter: drop-shadow(0 0 24px rgba(217,173,95,0.45));
+    animation: pulse-sigil 4s ease-in-out infinite;
+  }
+  @keyframes pulse-sigil{
+    0%, 100%{ opacity: 0.9; transform: scale(1); }
+    50%{ opacity: 1; transform: scale(1.05); }
+  }
+  .hero h1{
+    font-size: clamp(38px, 6vw, 66px);
+    line-height: 1.08;
+    max-width: 820px;
+    margin: 0 auto 22px;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    background: linear-gradient(180deg, #fff8ec 0%, var(--gold-soft) 60%, var(--gold) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .hero p.lead{
+    color: var(--muted);
+    max-width: 520px;
+    margin: 0 auto 42px;
+    font-size: 18px;
+  }
+  .hero-ctas{ display:flex; gap:16px; justify-content:center; flex-wrap: wrap; margin-bottom: 26px;}
+
+  .btn{
+    display:inline-block;
+    padding: 16px 36px;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration:none;
+    transition: transform .2s ease, box-shadow .2s ease;
+    border: 1px solid transparent;
+  }
+  .btn-primary{
+    background: linear-gradient(135deg, var(--gold-soft), var(--gold));
+    color: var(--bg-deep);
+  }
+  .btn-primary:hover{ transform: translateY(-2px); box-shadow: 0 14px 34px rgba(204,155,79,0.3); }
+  .btn-ghost{
+    border-color: var(--line);
+    color: var(--ink);
+    font-weight: 500;
+  }
+  .btn-ghost:hover{ border-color: var(--gold); }
+
+  .hero-note{ color: var(--muted); font-size: 13px; opacity: .8; }
+
+  .trust-row{
+    display:flex;
+    justify-content:center;
+    gap: 48px;
+    margin-top: 64px;
+    flex-wrap: wrap;
+  }
+  .trust-item{ text-align:center; }
+  .trust-item .num{
+    font-family:'Cormorant Garamond', serif;
+    font-size: 38px;
+    color: var(--gold-soft);
+    display:block;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .trust-item .label{ font-size: 13px; color: var(--muted); }
+
+  /* SECTION shared */
+  section{ padding: 96px 0; position: relative; }
+  .section-head{ max-width: 620px; margin: 0 auto 54px; text-align: center; }
+  .section-head .kicker{
+    color: var(--gold-soft);
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    display:block;
+  }
+  .section-head h2{ font-size: clamp(28px,3.6vw,42px); margin:0; text-transform: uppercase; }
+
+  /* SERVICES / CATALOG */
+  .services{ border-top: 1px solid var(--line); }
+  .services-grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .service-card{
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 32px 28px;
+    transition: border-color .25s ease, transform .25s ease;
+  }
+  .service-card:hover{ border-color: var(--gold); transform: translateY(-4px); }
+  .service-card .icon{
+    width: 40px; height: 40px;
+    margin-bottom: 18px;
+    color: var(--sigil);
+    font-size: 26px;
+    line-height: 1;
+  }
+  .service-card h3{
+    font-size: 21px;
+    margin: 0 0 10px;
+    text-transform: none;
+    letter-spacing: 0.01em;
+  }
+  .service-card p{ color: var(--muted); font-size: 14.5px; margin: 0; }
+
+  @media (max-width: 980px){ .services-grid{ grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 620px){ .services-grid{ grid-template-columns: 1fr; } }
+
+  /* ABOUT */
+  .about{ border-top: 1px solid var(--line); }
+  .about-grid{
+    display:grid;
+    grid-template-columns: 1fr 1px 1fr;
+    gap: 48px;
+    align-items: center;
+  }
+  .about-grid .divider{ background: var(--line); height: 100%; min-height: 160px; }
+  .about-text{ color: var(--muted); font-size: 16.5px; }
+  .about-text p{ margin: 0 0 18px; }
+  .about-list{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap: 22px; }
+  .about-list li{ display:flex; gap:16px; align-items:flex-start; }
+  .about-list .mark{
+    color: var(--sigil);
+    font-size: 19px;
+    flex-shrink:0;
+    margin-top: 2px;
+  }
+  .about-list h4{ margin:0 0 4px; font-size:18px; font-weight:600; font-family:'Manrope',sans-serif; }
+  .about-list p{ margin:0; color: var(--muted); font-size: 14.5px; }
+  .signoff{
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--gold-soft);
+    font-size: 19px;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  /* TESTIMONIALS — carousel, 4 visible, slide by 1 */
+  .testimonials{
+    background: var(--bg-deep);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .carousel{ position: relative; }
+  .carousel-viewport{ overflow: hidden; }
+  .carousel-track{
+    display:flex;
+    gap: 20px;
+    transition: transform .5s cubic-bezier(.65,0,.35,1);
+  }
+  .review-card{
+    flex: 0 0 calc(25% - 15px);
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 26px 22px;
+    display:flex;
+    flex-direction:column;
+    min-height: 230px;
+  }
+  .review-card .stars{
+    color: var(--gold-soft);
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+  }
+  .review-card p{
+    font-size: 14.5px;
+    color: var(--ink);
+    flex-grow: 1;
+    margin: 0 0 18px;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .review-author{ display:flex; align-items:center; gap: 10px; }
+  .review-avatar{
+    width: 34px; height: 34px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--gold-soft), var(--violet));
+    display:flex; align-items:center; justify-content:center;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--bg-deep);
+    flex-shrink: 0;
+  }
+  .review-author .name{ font-size: 13.5px; color: var(--muted); }
+
+  .carousel-controls{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap: 26px;
+    margin-top: 40px;
+  }
+  .carousel-arrow{
+    width: 42px; height: 42px;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    display:flex; align-items:center; justify-content:center;
+    cursor: pointer;
+    color: var(--gold-soft);
+    background: transparent;
+    font-size: 17px;
+    transition: border-color .2s ease, background .2s ease;
+    flex-shrink: 0;
+  }
+  .carousel-arrow:hover{ border-color: var(--gold); background: rgba(204,155,79,0.08); }
+  .carousel-dots{ display:flex; gap: 7px; }
+  .carousel-dot{
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--line);
+    cursor: pointer;
+    transition: background .2s ease, transform .2s ease;
+    border: none;
+    padding: 0;
+  }
+  .carousel-dot.active{ background: var(--gold); transform: scale(1.3); }
+
+  @media (max-width: 980px){ .review-card{ flex: 0 0 calc(50% - 10px); } }
+  @media (max-width: 620px){ .review-card{ flex: 0 0 100%; } }
+
+  /* CONTACTS / FINAL CTA */
+  .join{ text-align:center; }
+  .join .card{
+    position: relative;
+    border: 1px solid var(--line);
+    padding: 64px 44px;
+    max-width: 680px;
+    margin: 0 auto;
+    border-radius: 8px;
+    background: radial-gradient(circle at 50% 0%, rgba(204,155,79,0.1), transparent 60%);
+    overflow: hidden;
+  }
+  .join .card::before{
+    content:'✳';
+    position:absolute;
+    top: -30px; right: -10px;
+    font-size: 180px;
+    color: rgba(204,155,79,0.05);
+    font-family: sans-serif;
+  }
+  .join h2{ font-size: clamp(28px,3.6vw,38px); margin: 0 0 16px; text-transform: uppercase; position:relative; }
+  .join p{ color: var(--muted); margin: 0 0 34px; position:relative; }
+  .join .contact-links{
+    display:flex; gap: 14px; justify-content:center; flex-wrap: wrap; position: relative;
+  }
+
+  footer{
+    border-top: 1px solid var(--line);
+    padding: 34px 0;
+    text-align:center;
+    color: var(--muted);
+    font-size: 13px;
+  }
+  footer .foot-brand{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap: 8px;
+    font-family:'Cormorant Garamond', serif;
+    color: var(--gold-soft);
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+  footer .foot-brand svg{ width: 22px; height: 22px; }
+  footer .foot-links a{ margin: 0 8px; }
+  footer .foot-links a:hover{ color: var(--gold-soft); }
+
+  @media (max-width: 760px){
+    .nav-links{ display:none; }
+    .about-grid{ grid-template-columns: 1fr; }
+    .about-grid .divider{ display:none; }
+    .trust-row{ gap: 30px; }
+    .brand em{ display:none; }
+    .nav .cta-small{ padding: 9px 14px; font-size: 13px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="stars-bg"></div>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand"><img src="assets/ezoterika-icon.png" class="brand-icon" alt="Езотерика"> Езотерика <em>· магія та ритуали</em></div>
+    <nav class="nav-links">
+      <a href="#services">Каталог</a>
+      <a href="#about">Про нас</a>
+      <a href="#reviews">Відгуки</a>
+      <a href="#contacts">Контакти</a>
+    </nav>
+    <a class="cta-small" href="https://t.me/ezoterika_shop" target="_blank" rel="noopener">Написати в Telegram</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-inner">
+    <img src="assets/ezoterika-icon.png" class="sigil-big" alt="Езотерика">
+    <h1>Простір, де<br>починається ритуал</h1>
+    <p class="lead">Ритуальні набори, Таро, обереги, свічки та природні компоненти — для практиків і тих, хто лише починає свій шлях. Підбираємо індивідуально, під ваш запит.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="#services">Переглянути каталог</a>
+      <a class="btn btn-ghost" href="https://t.me/ezoterika_shop" target="_blank" rel="noopener">Написати в Telegram</a>
+    </div>
+    <p class="hero-note">Перед покупкою можна проконсультуватись — допоможемо підібрати те, що підходить саме вам.</p>
+
+    <div class="trust-row">
+      <div class="trust-item"><span class="num">500+</span><span class="label">виконаних замовлень</span></div>
+      <div class="trust-item"><span class="num">4.9</span><span class="label">середня оцінка клієнтів</span></div>
+      <div class="trust-item"><span class="num">∞</span><span class="label">країн — доставляємо всюди</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Езотерика · Магія та ритуали</span>
+      <h2>Послуги та каталог</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="icon">✦</div>
+        <h3>Таро та розклади</h3>
+        <p>Колоди для роботи та особисті консультації з розкладом на ваш запит — стосунки, шлях, рішення.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">☾</div>
+        <h3>Ритуальні набори</h3>
+        <p>Зібрані під конкретний намір — кохання, гроші, захист. Свічки, трави та компоненти в одному наборі.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">◬</div>
+        <h3>Обереги та амулети</h3>
+        <p>Вироби, підібрані під вашу мету — захист, підтримку або зміцнення внутрішнього ресурсу.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">✳</div>
+        <h3>Натуральні компоненти</h3>
+        <p>Трави, олії, кристали та свічки поштучно — для тих, хто збирає власний ритуал самостійно.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">◐</div>
+        <h3>Індивідуальні консультації</h3>
+        <p>Допоможемо визначитись з підбором — які товари та в якому порядку підходять під ваш запит.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">✶</div>
+        <h3>Майстер-класи</h3>
+        <p>Базові навички роботи з картами, свічками та ритуальною практикою — для тих, хто лише починає.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Про нас</span>
+      <h2>Філософія Езотерика</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>Кожен предмет у нашому каталозі підібраний вручну — ми не женемось за кількістю, а звертаємо увагу на якість матеріалів і те, наскільки чесно вони виконують свою роль у ритуалі.</p>
+        <p>Ми віримо, що магія — це не про швидкий результат, а про увагу до деталі, намір і послідовність дій. Тому завжди готові підказати, як користуватись набором чи оберегом, а не просто продати товар.</p>
+      </div>
+      <div class="divider"></div>
+      <ul class="about-list">
+        <li>
+          <span class="mark">✳</span>
+          <div>
+            <h4>Ручний підбір</h4>
+            <p>Кожен набір і оберіг перевіряється особисто перед відправкою.</p>
+          </div>
+        </li>
+        <li>
+          <span class="mark">✳</span>
+          <div>
+            <h4>Перевірені матеріали</h4>
+            <p>Працюємо тільки з натуральними компонентами з перевірених джерел.</p>
+          </div>
+        </li>
+        <li>
+          <span class="mark">✳</span>
+          <div>
+            <h4>Супровід після покупки</h4>
+            <p>Залишаємось на зв'язку, якщо виникнуть питання про використання.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="signoff">Магія — це увага, перетворена в дію.</div>
+  </div>
+</section>
+
+<section class="testimonials" id="reviews">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Що кажуть клієнти</span>
+      <h2>Відгуки</h2>
+    </div>
+    <div class="carousel">
+      <div class="carousel-viewport">
+        <div class="carousel-track" id="carouselTrack"></div>
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-arrow" id="prevBtn" aria-label="Попередні відгуки">‹</button>
+        <div class="carousel-dots" id="carouselDots"></div>
+        <button class="carousel-arrow" id="nextBtn" aria-label="Наступні відгуки">›</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="join" id="contacts">
+  <div class="wrap">
+    <div class="card">
+      <h2>Готові підібрати свій ритуал?</h2>
+      <p>Напишіть у Telegram або Instagram — допоможемо визначитись з вибором і відповімо на всі запитання.</p>
+      <div class="contact-links">
+        <a class="btn btn-primary" href="https://t.me/ezoterika_shop" target="_blank" rel="noopener">Telegram: @ezoterika_shop</a>
+        <a class="btn btn-ghost" href="https://instagram.com/ezoterika_shop" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-brand"><img src="assets/ezoterika-icon.png" width="22" height="22" alt="Езотерика"> Езотерика · Магія та ритуали</div>
+    <div class="foot-links">
+      <a href="https://t.me/ezoterika_shop" target="_blank" rel="noopener">Telegram</a>·
+      <a href="https://instagram.com/ezoterika_shop" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const reviews = [{"text": "Замовляла набір на грошовий потік — все прийшло акуратно упаковане, з докладною інструкцією. Дуже приємна енергетика речей.", "author": "Оксана", "rating": 5}, {"text": "Взяла колоду Таро та отримала консультацію по розкладу — пояснили доступно, без зайвої містики, по суті питання.", "author": "Марина", "rating": 5}, {"text": "Оберіг замовляв під захист у подорожах. Виготовлення трохи довше за середнє, але якість того варта.", "author": "Дмитро", "rating": 4}, {"text": "Дуже дякую за підбір трав для ритуалу — все свіже, з описом, як і коли використовувати.", "author": "Ярослава", "rating": 5}, {"text": "Перший раз звертаюсь до подібного магазину. Побоювалась шахрайства, але все чесно: питання проконсультували ще до покупки.", "author": "Ірина", "rating": 5}, {"text": "Свічки ручної роботи — просто шикарні, і горять довго. Атмосфера в кімнаті одразу інша.", "author": "Наталія", "rating": 5}, {"text": "Брав набір для ритуалу на кохання. Чесно попередили, що результат залежить не тільки від набору, а й від роботи над собою — це підкупило.", "author": "Артем", "rating": 5}, {"text": "Гарна упаковка, приємний бонус до замовлення. Доставка трохи затрималась, але попередили заздалегідь.", "author": "Софія", "rating": 4}, {"text": "Консультація по вибору оберега була дуже детальною, врахували мій запит і навіть застереження по сумісності каменів.", "author": "Валентина", "rating": 5}, {"text": "Замовляла кристали для медитацій — якість відмінна, енергетика відчувається одразу.", "author": "Юлія", "rating": 5}, {"text": "Майстер-клас по роботі з картами був дуже змістовний, тепер сама роблю прості розклади для себе.", "author": "Христина", "rating": 5}, {"text": "Все прийшло швидко, набір зібраний акуратно. Питання по використанню відповіли одразу в Telegram.", "author": "Олена", "rating": 4}, {"text": "Купувала подарунок подрузі — обрали чудовий набір, вона в захваті від якості та подачі.", "author": "Вікторія", "rating": 5}, {"text": "Дуже уважне ставлення до кожного запиту, відчувається, що товари підбирають не для галочки.", "author": "Тетяна", "rating": 5}];
+
+  const track = document.getElementById('carouselTrack');
+  const dotsWrap = document.getElementById('carouselDots');
+
+  function visibleCount(){
+    if (window.innerWidth <= 620) return 1;
+    if (window.innerWidth <= 980) return 2;
+    return 4;
+  }
+
+  let perView = visibleCount();
+  let current = 0;
+  const maxIndex = () => reviews.length - perView;
+
+  reviews.forEach((r) => {
+    const initial = r.author.trim().charAt(0).toUpperCase();
+    const card = document.createElement('div');
+    card.className = 'review-card';
+    const starsStr = '★'.repeat(r.rating) + '☆'.repeat(5 - r.rating);
+    card.innerHTML = `
+      <div class="stars">${starsStr}</div>
+      <p>${r.text}</p>
+      <div class="review-author">
+        <div class="review-avatar">${initial}</div>
+        <div class="name">${r.author}</div>
+      </div>
+    `;
+    track.appendChild(card);
+  });
+
+  function buildDots(){
+    dotsWrap.innerHTML = '';
+    const total = maxIndex() + 1;
+    for(let i=0; i<total; i++){
+      const dot = document.createElement('button');
+      dot.className = 'carousel-dot' + (i === current ? ' active' : '');
+      dot.addEventListener('click', () => goTo(i));
+      dotsWrap.appendChild(dot);
+    }
+  }
+
+  function update(){
+    const cardWidth = track.children[0].getBoundingClientRect().width;
+    const gap = 20;
+    track.style.transform = `translateX(-${current * (cardWidth + gap)}px)`;
+    document.querySelectorAll('.carousel-dot').forEach((d,i) => d.classList.toggle('active', i === current));
+  }
+
+  function goTo(i){
+    current = Math.max(0, Math.min(i, maxIndex()));
+    update();
+  }
+
+  document.getElementById('prevBtn').addEventListener('click', () => {
+    current = current <= 0 ? maxIndex() : current - 1;
+    update();
+  });
+  document.getElementById('nextBtn').addEventListener('click', () => {
+    current = current >= maxIndex() ? 0 : current + 1;
+    update();
+  });
+
+  buildDots();
+  update();
+
+  let autoplay = setInterval(() => {
+    current = current >= maxIndex() ? 0 : current + 1;
+    update();
+  }, 4500);
+  document.querySelector('.carousel').addEventListener('mouseenter', () => clearInterval(autoplay));
+  document.querySelector('.carousel').addEventListener('mouseleave', () => {
+    autoplay = setInterval(() => {
+      current = current >= maxIndex() ? 0 : current + 1;
+      update();
+    }, 4500);
+  });
+
+  window.addEventListener('resize', () => {
+    const newPerView = visibleCount();
+    if (newPerView !== perView){
+      perView = newPerView;
+      current = 0;
+      buildDots();
+    }
+    update();
+  });
+</script>
+
+</body>
+</html>
